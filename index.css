@@ -1,0 +1,260 @@
+*{
+   font-family: 'Lexend Deca', sans-serif;
+   padding: 0;
+    margin: 0;
+    user-select: none;
+   
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+main, .confirm{
+   
+    background-color: white;
+    box-shadow: 0px 0px 33px 2px #eabc043f;
+    width: 70%;
+    margin: 3vh auto 0 auto;
+    padding: 2em;
+    color: rgb(32, 32, 32)
+    
+}
+
+main h1:nth-child(1){
+     font-size: 3.3em;
+}
+
+main h1:nth-child(1) b{
+    color: #eabc04;
+}
+
+main p  {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    width: 70%;
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+
+
+main form input, main form select{ 
+   display: block;
+   background-color: white;
+   color: rgb(31, 31, 31);
+   border: 2.3px solid #eabc04;
+   margin: 2em 0;
+   width: 40%;
+   padding: 0.9em 1em;
+   border-radius: 20px;
+   font-size: 0.81em;
+
+}
+
+main form input:nth-child(4){
+    margin-top: 0;
+}
+
+main form textarea{
+    border: 2px solid #eabc04;
+    width: 80%;
+    padding: 2em 1em;
+    margin: 2em 0;
+    border-radius: 20px;
+    display: block;
+}
+
+button{
+    background-color: #eabc04;
+    color: white;
+    border: 2px solid white;
+    font-size: 1.2em;
+    padding: 1em 1em;
+    width: 20%;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+    transition: all 2s ease-in-out;
+}
+
+
+.confirm{
+    background: #eabc04;
+    color: white;
+    padding: 2em 3em;
+    border-radius: 20px;
+    display: none;
+    height: 80vh;
+}
+
+.confirm h1{
+    font-size: 4.4em;
+    text-decoration: underline;
+    margin-top: 2em;
+    cursor: pointer;
+}
+
+.confirm p{
+    width: 100%;
+}
+
+.confirm button{
+    width: 70%;
+    background: white;
+    color: #eabc04;
+    
+}
+
+
+
+
+
+
+
+
+
+#colorMe{
+    background-color: red;
+    display: block;
+    text-align: center;
+    margin: 4em;
+    background: url("../Group\ 2-3.png")
+}
+
+#colorMe img{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(4, 0, 255);
+    margin: 0 auto;
+}
+
+
+#loading{
+ 
+    animation: loading infinite 0.9s alternate;
+}
+
+
+@keyframes loading{
+    from{
+        width: 40%;
+        opacity: 0.4;
+    }
+
+    to{
+        width: 80%;
+        opacity: 0.9;
+    }
+}
+
+.error{
+    background-color: #eabc04;
+    color: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 2em 0;
+    z-index: 3;
+
+}
+
+
+/* Tablet */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+
+    main h1:nth-child(1){
+        font-size: 2.3em;
+   }
+
+   main p  {
+
+    width: 100%;
+
+}
+
+
+main form input, main form select{ 
+ 
+    width: 80%;
+
+ 
+ }
+
+ button{
+     width: 60%;
+ }
+
+ .confirm p{
+    width: 100%;
+    font-size: 2em;
+}
+
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {  
+
+
+    main, .confirm{
+        width: 90%;
+        padding: 1em;
+    }
+
+
+    main h1:nth-child(1){
+        font-size: 1.8em;
+   }
+
+
+   main p  {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    width: 100%;
+    font-size: 1em;
+    line-height: 1.8em;
+}
+
+
+   main p  {
+
+    width: 100%;
+
+}
+
+
+main form input, main form select{ 
+ 
+    width: 80%;
+
+ 
+ }
+
+ button{
+     width: 60%;
+ }
+
+ .confirm p{
+    width: 100%;
+    font-size: 1em;
+    
+}
+
+.confirm{
+    height: 100vh;
+    border-radius: none;
+
+}
+
+
+.confirm h1{
+    font-size: 2.6em;
+    text-decoration: underline;
+    margin-top: 2em;
+    cursor: pointer;
+}
+}

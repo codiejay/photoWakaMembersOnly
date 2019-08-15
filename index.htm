@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FORM FOR PHOTOWAKA TEAM</title>
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./index.css">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="error">
+        OPPS,  THERE'S AN ERROR SOMEWHERE, PLEASE REVIEW YOUR DETAILS
+    </div>
+
+
+    <main>
+            <h1>
+                    This form belongs to <b>PHOTOWAKA AFRICA TEAM MEMBERS ONLY</b>
+                </h1>
+                <p>If you are not a part of the board of trustees/directors/executives, please dont fill this form, else, go ahead and fill it, make sure to look at this twice as this data would be automatically added to our website. </p>
+            
+                <form>
+            
+                    <input id="userName" type="text" placeholder="Your Name (PUBLICLY DISPLAYED)">
+                    
+                    <i>CHOOSE YOUR MEMBERSHIP LEVEL</i>
+                    <select name="" id="group" >
+                        <option value="EXECUTIVE BOARD">EXECUTIVE BOARD</option>
+                        <option  value="Advisory Board">Advisory Board</option>
+                        <option  value="Board Of Trustees">Board Of Trustees</option>
+                        <option value="None" selected hidden>None</option>
+                    </select>
+
+                    <textarea id="userBio" placeholder="Your BIO  (PUBLICLY DISPLAYED" name="" id="" cols="30" rows="10"></textarea>
+
+                   
+                    <i>A NICE IMAGE OF YOURSELF(PUBLICLY DISPLAYED)"</i>
+                    <input type="file" id="img" placeholder="Your BIO  (PUBLICLY DISPLAYED)" >
+                    <button id="testSubmit">Submit</button>
+            
+               
+
+                 
+            
+                </form>
+    </main>
+
+    
+    <div class="confirm">
+            <h1>
+                THANKS!! WE GOT YOUR DATA NOW! 
+             
+            </h1>
+
+            <p>PLEASE DONT REFILL THIS. JUST CLOSE THIS PAGE AND MAKE SURE NO ONE WHO ISNT A PART OF PWA GET IT.</p>
+ 
+         </div>
+   
+
+
+
+</body>
+
+<script src="./index.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+
+
+</html>
